@@ -1,3 +1,12 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -6,3 +15,77 @@ body {
     align-items: center;
 }
 
+.header {
+    background-color: #1F2937;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.header h1{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 18px;
+    display: flex;
+    gap: 18px;
+}
+
+li a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+.body-1 {
+    background-color: #1F2937;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.body-2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.body-3 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #E5E7EB;
+}
+
+.body-4 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    background-color: #1F2937;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #E5E7EB;
+    padding: 10px;
+}
