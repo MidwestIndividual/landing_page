@@ -58,6 +58,7 @@ li a {
     justify-content: start;
     align-items: center;
     flex-grow: 1;
+    padding: 30px;
 }
 
 .body-3 {
@@ -150,4 +151,25 @@ li a {
     font-size: 18px;
     text-align: end;
     font-weight: bold;
+}
+
+.body-2>p {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+}
+
+.headshots {
+    margin-top: 20px;
+    display: flex;
+    width: 600px;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.headshot-holder {
+    border: 2px solid #3882F6;
+    border-radius: 5px;
+    aspect-ratio: 1 / 1;
+    
 }
