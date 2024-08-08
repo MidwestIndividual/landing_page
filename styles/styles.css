@@ -19,9 +19,18 @@ body {
     background-color: #1F2937;
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 200px;
+    padding: 10px;
 }
 
 .header h1{
@@ -45,11 +54,20 @@ li a {
     background-color: #1F2937;
     width: 100%;
     display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.body-1-content {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 800px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-grow: 1;
-    padding: 10px 200px;
+    gap: 20px;
+    padding: 10px;
 }
 
 .body-2 {
@@ -65,7 +83,7 @@ li a {
 .body-3 {
     display: flex;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
@@ -79,7 +97,7 @@ li a {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    padding: 0px 200px;
+    padding: 20px 20px;
 }
 
 .footer {
@@ -97,7 +115,11 @@ li a {
     background-color: #3882F6;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     width: 100%;
+    max-width: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
     border-radius: 5px;
     padding: 30px 50px;
 }
@@ -138,7 +160,15 @@ li a {
 }
 
 .body-3 p{
-    width: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 800px;
+    margin: 0px 20px;
 }
 
 .quote-body {
@@ -191,16 +221,15 @@ li a {
 }
 
 .main-image img {
-    width: 200px;
+    width: 250px;
 }
 
 .awesome-website {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
 }
-
-
 
 .awesome-website-button {
     display: inline;
@@ -209,4 +238,16 @@ li a {
     border-radius: 5px;
     border: #3882F6;
     background-color: #3882F6;
+    margin-top: 5px;
+}
+
+.awesome-website-header {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.awesome-website-subtext {
+    font-size: 18px;
+    color: #E5E7EB;
 }
